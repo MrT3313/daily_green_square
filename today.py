@@ -1,7 +1,8 @@
 from datetime import date
 
-today = [1, 2, 3]
+current_date = str(date.today())
 
-current_date = date.today()
-
-today.append(current_date)
+text_file = open("date_tracker.txt", "w")
+record = "Today is " + current_date + "\n"
+text_file.write(record)
+text_file.close()
