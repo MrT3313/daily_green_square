@@ -1,0 +1,17 @@
+#!/bin/bash
+
+cd /Users/mattkirby/repos
+
+rm -rf /Users/mattkirby/repos/daily_green_square
+
+git clone https://github.com/mkirby1995/daily_green_square
+
+cd daily_green_square
+
+python /Users/mattkirby/repos/daily_green_square/today.py
+
+git add .
+
+git commit -am 'update'
+
+git push
